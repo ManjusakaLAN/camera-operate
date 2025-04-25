@@ -28,9 +28,9 @@
         </dependency>
 
         <dependency>
-            <groupId>net.java.dev.jna</groupId>
-            <artifactId>jna</artifactId>
-            <version>5.4.0</version>
+            <groupId>net.java.ys.jna</groupId>
+            <artifactId>ysjna</artifactId>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 

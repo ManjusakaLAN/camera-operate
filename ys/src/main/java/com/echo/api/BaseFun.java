@@ -27,7 +27,7 @@ class BaseFun {
         String os = getOS();
 
         if (os.equals("win")) {
-            loadLibrary = "E:\\cameraSDK\\cameraJavaDemo\\hk\\src\\main\\resources\\lib\\win64\\";
+            loadLibrary = "E:\\cameraSDK\\cameraJavaDemo\\ys\\src\\main\\resources\\lib\\win64\\";
         } else if (os.equals("mac")) {
             loadLibrary = "/usr/share/ys/";
         } else if (os.equals("linux")) {

@@ -35,9 +35,9 @@
         </dependency>
 
         <dependency>
-            <groupId>net.java.dev.jna</groupId>
-            <artifactId>jna</artifactId>
-            <version>5.4.0</version>
+            <groupId>net.java.dh.jna</groupId>
+            <artifactId>dhjna</artifactId>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 

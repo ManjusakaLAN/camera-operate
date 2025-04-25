@@ -1,0 +1,391 @@
+{
+  "NVRs": [
+    {
+      "Id": 1,
+      "Type": 0,
+      "Name": "新能源集控",
+      "IP": "172.16.17.200",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "xwfd88888"
+    },
+    {
+      "Id": 2,
+      "Type": 0,
+      "Name": "华海升压站",
+      "IP": "172.16.17.201",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "nzsp1234"
+    },
+    {
+      "Id": 3,
+      "Type": 0,
+      "Name": "123",
+      "IP": "192.168.1.50",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "br123456789"
+    },
+    {
+      "Id": 4,
+      "Type": 0,
+      "Name": "石洲哨兵",
+      "IP": "172.17.23.234",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "qaz123wsx!"
+    },
+    {
+      "Id": 5,
+      "Type": 0,
+      "Name": "石州光伏",
+      "IP": "172.17.21.100",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "qaz123wsx!"
+    },
+    {
+      "Id": 6,
+      "Type": 0,
+      "Name": "富湾升压站",
+      "IP": "172.17.22.200",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "1234abcd"
+    },
+    {
+      "Id": 7,
+      "Type": 0,
+      "Name": "佛山顺德",
+      "IP": "172.16.48.191",
+      "Port": "2004",
+      "UserName": "admin",
+      "PassWord": "Hdsd2018"
+    },
+    {
+      "Id": 10,
+      "Type": 0,
+      "Name": "阳江 201",
+      "IP": "172.16.72.201",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "12345678a"
+    },
+    {
+      "Id": 11,
+      "Type": 0,
+      "Name": "阳江 200",
+      "IP": "172.16.72.200",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "12345678a"
+    },
+    {
+      "Id": 12,
+      "Type": 0,
+      "Name": "四会-哨兵36",
+      "IP": "172.17.36.168",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "okwy1234"
+    },
+    {
+      "Id": 13,
+      "Type": 0,
+      "Name": "四会-哨兵37",
+      "IP": "172.17.37.168",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "okwy1234"
+    },
+    {
+      "Id": 14,
+      "Type": 0,
+      "Name": "深圳",
+      "IP": "172.16.32.200",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "%PSrk2012"
+    },
+    {
+      "Id": 15,
+      "Type": 0,
+      "Name": "增城",
+      "IP": "172.16.88.191",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "A7894561230."
+    },
+    {
+      "Id": 16,
+      "Type": 0,
+      "Name": "清远",
+      "IP": "172.16.64.200",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "HD888888888"
+    },
+    {
+      "Id": 17,
+      "Type": 0,
+      "Name": "江门01",
+      "IP": "172.16.40.200",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "ty26811438"
+    },
+    {
+      "Id": 18,
+      "Type": 0,
+      "Name": "江门02",
+      "IP": "172.16.40.202",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "ty26811438"
+    },
+    {
+      "Id": 19,
+      "Type": 1,
+      "Name": "大学城电厂",
+      "IP": "172.16.56.200",
+      "Port": "80",
+      "UserName": "admin",
+      "PassWord": "gzdxc2022_"
+    },
+    {
+      "Id": 20,
+      "Type": 0,
+      "Name": "集控中心应急指挥电脑",
+      "IP": "172.16.17.199",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "gzdxc2022_"
+    },
+    {
+      "Id": 21,
+      "Type": 0,
+      "Name": "华海中控室",
+      "IP": "172.16.17.202",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "nzsp1234"
+    },
+    {
+      "Id": 22,
+      "Type": 0,
+      "Name": "华海风场1",
+      "IP": "172.16.17.221",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "Aa12345678"
+    },
+    {
+      "Id": 23,
+      "Type": 0,
+      "Name": "华海风场2",
+      "IP": "172.16.17.222",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "Aa12345678"
+    },
+    {
+      "Id": 24,
+      "Type": 0,
+      "Name": "华海风场3",
+      "IP": "172.16.17.223",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "Aa12345678"
+    },
+    {
+      "Id": 25,
+      "Type": 0,
+      "Name": "华海风场4",
+      "IP": "172.16.17.224",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "Aa12345678"
+    },
+    {
+      "Id": 26,
+      "Type": 0,
+      "Name": "三阳升压站",
+      "IP": "172.16.17.203",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "xwxq1234"
+    },
+    {
+      "Id": 27,
+      "Type": 0,
+      "Name": "三阳风场1",
+      "IP": "172.16.17.226",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "hik12345"
+    },
+    {
+      "Id": 28,
+      "Type": 0,
+      "Name": "三阳风场2",
+      "IP": "172.16.17.227",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "hik12345"
+    },
+    {
+      "Id": 29,
+      "Type": 0,
+      "Name": "学田升压站",
+      "IP": "172.16.17.204",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "a12345678"
+    },
+    {
+      "Id": 30,
+      "Type": 0,
+      "Name": "学田风场1",
+      "IP": "172.16.17.240",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "Aa12345678"
+    },
+    {
+      "Id": 31,
+      "Type": 0,
+      "Name": "学田风场2",
+      "IP": "172.16.17.241",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "Aa12345678"
+    },
+    {
+      "Id": 32,
+      "Type": 0,
+      "Name": "盐井升压站",
+      "IP": "172.16.17.205",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "admin"
+    },
+    {
+      "Id": 33,
+      "Type": 0,
+      "Name": "盐井风场1",
+      "IP": "172.16.17.230",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "Aa12345678"
+    },
+    {
+      "Id": 34,
+      "Type": 0,
+      "Name": "盐井风场2",
+      "IP": "172.16.17.231",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "Aa12345678"
+    },
+    {
+      "Id": 35,
+      "Type": 0,
+      "Name": "盐井风场3",
+      "IP": "172.16.17.232",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "Aa12345678"
+    },
+    {
+      "Id": 36,
+      "Type": 0,
+      "Name": "汕头200",
+      "IP": "172.16.96.200",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "Hdst1234"
+    },
+    {
+      "Id": 37,
+      "Type": 0,
+      "Name": "汕头201",
+      "IP": "172.16.96.201",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "Hdst1234"
+    },
+    {
+      "Id": 38,
+      "Type": 0,
+      "Name": "汕头202",
+      "IP": "172.16.96.202",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "Hdst1234"
+    },
+    {
+      "Id": 39,
+      "Type": 0,
+      "Name": "坪石200",
+      "IP": "172.16.24.200",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "hdps20120620!"
+    },
+    {
+      "Id": 40,
+      "Type": 0,
+      "Name": "坪石201",
+      "IP": "172.16.24.201",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "a1234567"
+    },
+    {
+      "Id": 41,
+      "Type": 0,
+      "Name": "坪石202",
+      "IP": "172.16.24.202",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "jk..6610"
+    },
+    {
+      "Id": 42,
+      "Type": 0,
+      "Name": "坪石203",
+      "IP": "172.16.24.203",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "jk..6610"
+    },
+    {
+      "Id": 43,
+      "Type": 0,
+      "Name": "阳江 202",
+      "IP": "172.16.72.202",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "12345678a"
+    },
+    {
+      "Id": 44,
+      "Type": 0,
+      "Name": "阳江 203",
+      "IP": "172.16.72.203",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "12345678a"
+    },
+    {
+      "Id": 45,
+      "Type": 0,
+      "Name": "万博",
+      "IP": "172.16.16.118",
+      "Port": "8000",
+      "UserName": "admin",
+      "PassWord": "wb123456"
+    }
+  ]
+}

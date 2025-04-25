@@ -10160,7 +10160,7 @@ DVR实现巡航数据结构
 
     boolean NET_DVR_SetDeviceConfigEx(int lUserID, int dwCommand, int dwCount, Pointer lpInParam, Pointer lpOutParam);
 
-    boolean NET_DVR_GetDVRConfig(int lUserID, int dwCommand, int lChannel, Pointer lpOutBuffer, int dwOutBufferSize, IntByReference lpBytesReturned);
+    boolean NET_DVR_GetDVRConfig(int lUserID, int dwCommand, int lChannel, Pointer lpOutBuffer,int dwInBufferSize, IntByReference lpBytesReturned);
 
     boolean NET_DVR_SetDVRConfig(int lUserID, int dwCommand, int lChannel, Pointer lpInBuffer, int dwInBufferSize);
 
