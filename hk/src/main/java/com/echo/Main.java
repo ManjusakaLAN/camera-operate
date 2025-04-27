@@ -14,27 +14,39 @@ import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.*;
 
+import static com.echo.util.HCNetSDKUtil.login;
+
 @Slf4j
 public class Main {
     private static final ExecutorService executorService = Executors.newFixedThreadPool(2);
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
-        String ip = "172.16.96.201";
-        int port = 8000;
+        String ip = "192.168.31.78";
+        Integer port = 8000;
         String username = "admin";
-        String password = "Hdst1234";
-        Integer channel = 0;
+        String password = "Hxxc1309";
+        Integer channel = 1;
         Integer command = 22;
         Integer deStop = 0;
         Integer speed = 2;
 //        operateHKCamera(ip, port, username, password, channel, command, deStop, speed);
         HCNetSDKUtil.init();
+
+        int lUserID = login(ip, port, username, password);
+        System.out.println("userId:" + lUserID);
+
 //        Integer userId = HCNetSDKUtil.login(ip, port, username, password);
+
         HCNetSDK.NET_DVR_DEVICEINFO_V30 m_strDeviceInfo = new HCNetSDK.NET_DVR_DEVICEINFO_V30();
         int userId = HCNetSDKUtil.hCNetSDK.NET_DVR_Login_V30(
-                ip, (short) port, username, password, m_strDeviceInfo
+                ip, port.shortValue(), username, password, m_strDeviceInfo
         );
+
+        if (userId == -1){
+            System.out.println("登录失败，错误码为: " + HCNetSDKUtil.hCNetSDK.NET_DVR_GetLastError());
+        }
+
         m_strDeviceInfo.read();
         int maxIpChannelNum;
         if (m_strDeviceInfo.byHighDChanNum == 0) {
@@ -54,6 +66,7 @@ public class Main {
             m_strIpparaCfg.write();
             //lpIpParaConfig 接收数据的缓冲指针
             Pointer lpIpParaConfig = m_strIpparaCfg.getPointer();
+
             bRet = HCNetSDKUtil.hCNetSDK.NET_DVR_GetDVRConfig(userId, HCNetSDK.NET_DVR_GET_IPPARACFG_V40, i, lpIpParaConfig, m_strIpparaCfg.size(), ibrBytesReturned);
             m_strIpparaCfg.read();
 

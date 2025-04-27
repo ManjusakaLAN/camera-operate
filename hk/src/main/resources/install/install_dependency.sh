@@ -10,8 +10,8 @@ JAR_LOCATION=/root/jna.jar
 mvn install:install-file \
   -Dmaven.repo.local=$LOCAL_REPOSITORY \
   -Dfile=$JAR_LOCATION \
-  -DgroupId=net.java.jna \
-  -DartifactId=jna \
+  -DgroupId=net.java.hk.jna \
+  -DartifactId=hkjna \
   -Dversion=1.0.0 \
   -Dpackaging=jar
 

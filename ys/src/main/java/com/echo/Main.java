@@ -19,18 +19,19 @@ public class Main {
         //登录
 
         NetDEVSDKLib.NETDEV_DEVICE_LOGIN_INFO_S stDevLoginInfo = new NetDEVSDKLib.NETDEV_DEVICE_LOGIN_INFO_S();
-
         String strUserName = "admin";
         String strPassword = "admin";
         String strIPAddr = "192.168.1.100";
-
         System.arraycopy(strUserName.getBytes(), 0, stDevLoginInfo.szUserName, 0, strUserName.getBytes().length);
         System.arraycopy(strPassword.getBytes(), 0, stDevLoginInfo.szPassword, 0, strPassword.getBytes().length);
         System.arraycopy(strIPAddr.getBytes(), 0, stDevLoginInfo.szIPAddr, 0, strIPAddr.getBytes().length);
-
         stDevLoginInfo.szUserName = strUserName.getBytes(StandardCharsets.UTF_8);
-
         stDevLoginInfo.dwPort = 80;
+        NetDEVSDKLib.NETDEV_SELOG_INFO_S logInfoS = new NetDEVSDKLib.NETDEV_SELOG_INFO_S();
+        Pointer userId = netsdk.NETDEV_Login_V30(stDevLoginInfo, logInfoS);
+
+        log.info("userId:{}", userId);
+
 
 
 //       设备类型枚举定义
@@ -51,27 +52,13 @@ public class Main {
 //            NETDEV_DTYPE_MAIN_UNKNOWN = 0XFF /* 未知设备*/
 //        }NETDEV_DEVICE_MAIN_TYPE_E;
 
-        NetDEVSDKLib.NETDEV_SELOG_INFO_S logInfoS = new NetDEVSDKLib.NETDEV_SELOG_INFO_S();
-        Pointer userId = netsdk.NETDEV_Login_V30(stDevLoginInfo, logInfoS);
 
-        log.info("userId:{}", userId);
         // 查询组织信息
         Pointer pointer = netsdk.NETDEV_FindDevList(userId, NetDEVSDKLib.NETDEV_DEVICE_MAIN_TYPE_E.NETDEV_DTYPE_MAIN_ENCODE);
 
         NetDEVSDKLib.NETDEV_UPNP_NAT_STATE_S netdevUpnpNatStateS = new NetDEVSDKLib.NETDEV_UPNP_NAT_STATE_S();
         boolean b = netsdk.NETDEV_GetUpnpNatState(userId, netdevUpnpNatStateS);
-        log.info("b:{}", b);
-        log.info("netdevUpnpNatStateS:{}", netdevUpnpNatStateS);
 
-        netsdk.NETDEV_SetDiscoveryCallBack(new NetDEVSDKLib.NETDEV_DISCOVERY_CALLBACK_PF() {
-            @Override
-            public void invoke(NetDEVSDKLib.NETDEV_DISCOVERY_DEVINFO_S pstDevInfo, Pointer lpUserData) {
-                log.info("pstDevInfo:{}", pstDevInfo);
-            }
-        }, pointer);
-
-        // 查询通道信息
-        netsdk.NETDEV_Discovery("0.0.0.0", "0.0.0.0");
 
 
     }
